@@ -20,7 +20,7 @@ double det(std::vector<std::vector<double>>& matrix, int n) {
         if (std::abs(matrix[pivot][i]) < eps) {
             return 0.0;
         }
-        // Если нашли строку лучше, меняем их местами и меняем знак определителя
+        //определитель при замене строк меняет знак
         if (i != pivot) {
             swap(matrix[i], matrix[pivot]);
             d = -d;
